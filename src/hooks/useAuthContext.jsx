@@ -1,4 +1,4 @@
-import { useLocalStorage } from "./UseLocalStorage";
+import { useLocalStorage } from "./useLocalStorage";
 import { useContext, createContext, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { login as loginAPI } from "../components/user/api/login";

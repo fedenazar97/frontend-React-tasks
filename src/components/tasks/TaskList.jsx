@@ -1,5 +1,5 @@
 import TaskDetail from "./TaskDetail";
-import { useTaskContext } from "../../hooks/TasksContext";
+import { useTaskContext } from "../../hooks/useTasksContext";
 import Loader from "../Loader/Loader";
 
 export const TaskList = () => {

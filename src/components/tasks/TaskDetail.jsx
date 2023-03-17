@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTaskContext } from "../../hooks/TasksContext";
+import { useTaskContext } from "../../hooks/useTasksContext";
 
 function TaskDetail({ task }) {
   const { deleteTask } = useTaskContext();
