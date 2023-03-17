@@ -27,7 +27,7 @@ export const AuthContextProvider = ({ children }) => {
 
   const logout = () => {
     setUser({ username: null, token: null });
-    navigate("/login");
+    navigate("/");
   };
 
   const value = useMemo(
