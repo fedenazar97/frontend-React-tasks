@@ -3,7 +3,7 @@ import TaskForm from "../components/tasks/TaskForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
-import { useAuthContext } from "../context/useAuthContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 export const TasksPage = () => {
   const { logout } = useAuthContext();

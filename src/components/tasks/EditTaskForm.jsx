@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { useTaskContext } from "../../context/TasksContext";
+import { useTaskContext } from "../../hooks/TasksContext";
 
 export const EditTaskForm = ({ task }) => {
   const [title, setTitle] = useState(task.title);

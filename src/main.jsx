@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
-import { TasksContextProvider } from "./context/TasksContext";
-import { AuthContextProvider } from "./context/useAuthContext";
+import { TasksContextProvider } from "./hooks/TasksContext";
+import { AuthContextProvider } from "./hooks/useAuthContext";
 
 import { BrowserRouter } from "react-router-dom";
 
