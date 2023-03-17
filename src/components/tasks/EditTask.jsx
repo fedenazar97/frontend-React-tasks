@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useTaskContext } from "../../context/TasksContext";
-import { useState } from "react";
 import { EditTaskForm } from "./EditTaskForm";
 
 export const EditTask = () => {

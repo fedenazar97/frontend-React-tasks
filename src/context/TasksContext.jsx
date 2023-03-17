@@ -4,7 +4,6 @@ import { postTask } from "../components/tasks/api/postTask";
 import { editTask as editTaskAPI } from "../components/tasks/api/editTask";
 import { deleteTask as deleteTaskAPI } from "../components/tasks/api/deleteTask";
 import { useAuthContext } from "./useAuthContext";
-import { getTask } from "../components/tasks/api/getTask";
 
 export const TaskContext = createContext();
 
