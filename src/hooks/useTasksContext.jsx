@@ -19,7 +19,7 @@ export function TasksContextProvider(props) {
     setLoadingPost(true);
     const response = await postTask(title, description, user.token);
     const body = await response.json();
-    setTasks((prevTasks) => prevTasks.concat(body));
+    setTasks((prevTasks) => [body, ...prevTasks]);
     setLoadingPost(false);
   };
 
