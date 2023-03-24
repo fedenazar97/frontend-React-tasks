@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import { TasksPage } from "./routes/TasksPage";
 import { Login } from "./components/user/Login";
 import { Register } from "./components/user/Register";
-import { EditTask } from "./components/tasks/EditTask";
 import { ProtectedRoute } from "./routes/ProtectedRoute";
 import { Home } from "./routes/Home";
 
@@ -18,14 +17,6 @@ const App = () => {
         element={
           <ProtectedRoute>
             <TasksPage />
-          </ProtectedRoute>
-        }
-      />
-      <Route
-        path="/tasks/:taskId"
-        element={
-          <ProtectedRoute>
-            <EditTask />
           </ProtectedRoute>
         }
       />

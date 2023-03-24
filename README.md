@@ -26,5 +26,3 @@ This project was bootstrapped with [Vite](https://vitejs.dev/guide/) + [React](h
     ~~~
 note that you will not be able to use its functionalities unless you launch the [backend server](https://github.com/fedenazar97/backend-DRF-api-tasks).
 
-## Future releases :
-- implement a modal window for editing tasks

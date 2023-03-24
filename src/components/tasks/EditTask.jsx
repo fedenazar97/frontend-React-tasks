@@ -1,17 +1,15 @@
-import { useParams } from "react-router-dom";
 import { useTaskContext } from "../../hooks/useTasksContext";
 import { EditTaskForm } from "./EditTaskForm";
 
-export const EditTask = () => {
-  let { taskId } = useParams();
+export const EditTask = ({taskId, onClose}) => {
   const { tasks } = useTaskContext();
 
-  const task = tasks.filter((task) => task.id === parseInt(taskId));
+  const task = tasks.filter((task) => task.id === taskId);
 
   return (
     <div>
       {task.map((task) => (
-        <EditTaskForm key={task.id} task={task} />
+        <EditTaskForm key={task.id} task={task} onClose={onClose} />
       ))}
     </div>
   );

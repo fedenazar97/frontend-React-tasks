@@ -1,16 +1,15 @@
-import "./modal.css";
-
-const Modal = ({ isOpen, onClose, children }) => {
+const Modal = ({ isVisible, onClose, children }) => {
+  if (!isVisible) return null;
   return (
-    <div
-      className="modal-container"
-      style={{ display: isOpen ? "grid" : "none" }}
-    >
-      <div className="modal-body">
-        <button className="modal-close" onClick={onClose}>
+    <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center text-center">
+      <div className="w-[600px] flex flex-col justify-center">
+        <button
+          className="text-white text-xl place-self-end"
+          onClick={() => onClose()}
+        >
           X
         </button>
-        {children}
+        <div className="rounded">{children}</div>
       </div>
     </div>
   );
